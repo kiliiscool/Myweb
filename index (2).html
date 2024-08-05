@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate Now</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Donate Now</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#mission">Our Mission</a></li>
+                <li><a href="#donate">Donate</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h2>Welcome to Donate Now</h2>
+            <p>Your contribution makes a significant impact. Join us in our mission to help those in need.</p>
+        </section>
+        <section id="mission">
+            <h2>Our Mission</h2>
+            <p>We are dedicated to providing support and resources to underprivileged communities. Your donations help us achieve our goals and make a real difference.</p>
+        </section>
+        <section id="donate">
+            <h2>Make a Donation</h2>
+            <form id="donationForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="amount">Donation Amount ($):</label>
+                <input type="number" id="amount" name="amount" required>
+                <button type="submit">Donate</button>
+            </form>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Email: info@donatenow.org</p>
+            <p>Phone: (123) 456-7890</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Donate Now</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate Now</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Donate Now</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#mission">Our Mission</a></li>
+                <li><a href="#donate">Donate</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h2>Welcome to Donate Now</h2>
+            <p>Your contribution makes a significant impact. Join us in our mission to help those in need.</p>
+        </section>
+        <section id="mission">
+            <h2>Our Mission</h2>
+            <p>We are dedicated to providing support and resources to underprivileged communities. Your donations help us achieve our goals and make a real difference.</p>
+        </section>
+        <section id="donate">
+            <h2>Make a Donation</h2>
+            <form id="donationForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="amount">Donation Amount ($):</label>
+                <input type="number" id="amount" name="amount" required>
+                <button type="submit">Donate</button>
+            </form>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Email: info@donatenow.org</p>
+            <p>Phone: (123) 456-7890</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Donate Now</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
+document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("donationForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+        
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        const amount = document.getElementById("amount").value;
+
+        if(name && email && amount) {
+            alert(`Thank you for your donation of $${amount}, ${name}! A confirmation email has been sent to ${email}.`);
+            this.reset();
+        } else {
+            alert("Please fill out all fields.");
+        }
+    });
+});
+document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("donationForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+        
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        const amount = document.getElementById("amount").value;
+
+        if(name && email && amount) {
+            alert(`Thank you for your donation of $${amount}, ${name}! A confirmation email has been sent to ${email}.`);
+            this.reset();
+        } else {
+            alert("Please fill out all fields.");
+        }
+    });
+});
